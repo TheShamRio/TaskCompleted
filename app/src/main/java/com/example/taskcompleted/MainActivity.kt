@@ -35,7 +35,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    // Content will be added here later
+                    TaskCompletedScreen()
                 }
             }
         }
@@ -65,3 +65,10 @@ fun TaskCompletedScreen() {
     }
 }
 
+@Preview(showBackground = true)
+@Composable
+fun TaskCompletedPreview() {
+    TaskCompletedTheme {
+        TaskCompletedScreen()
+    }
+}
